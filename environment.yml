@@ -10,22 +10,27 @@ dependencies:
   - lucidity
   - pyperclip
   - arrow
+  - ftrack-python-api
 - git:
-  - https://github.com/kredencz/pyblish-kredenc.git@26d94522ac8f69687839f8bf8a9ad5c9f9ec7955
-  - https://github.com/pyblish/pyblish-base.git@9a3d78772f73e5905c131f9431cc3a266b23cbf7
-  - https://github.com/pyblish/pyblish-lite.git@b1737db3242d485a0377dc52265ebae805268a97
-  - https://github.com/pyblish/pyblish-nuke.git@061de849f501063ad92c532b764847c8883061d7
-  - https://github.com/pyblish/pyblish-maya.git@b81e6edd67e9969348a133c8a6e630ab92fd6c3f
-  - https://github.com/pyblish/pyblish-houdini.git@88b189a82fd6b757aa7557c1c490b97e740154a5
-  - https://github.com/pyblish/pyblish-hiero.git@7d90aa115869ed555889f7858f359f39fb8f11fd
-  - https://github.com/pyblish/pyblish-ftrack.git@577900a3d18a1e82778e92d974d59087b0c45b47
   - https://github.com/abstractfactory/maya-capture.git@bdea21ad0cfa008b70d3419438687faf535e85b7
-  - https://bitbucket.org/ftrack/QtExt.git@f88d1db8d5b7a0f5162f29a0701166d3be24fd19
-  - https://bitbucket.org/ftrack/ftrack-connect.git@60eb9f979f0f6b3baaadc9fcee67877a24fc45e8
-  - https://bitbucket.org/ftrack/ftrack-connect-nuke.git@e9e0f7610d7bdc85b94eac972e9e624a2929c371
-  - https://bitbucket.org/ftrack/ftrack-connect-foundry.git@4a5323c453855ff909b7ba6b7ce8ac43617977a2
-  - https://github.com/tokejepsen/ftrack-connect-environment.git@3c71b345f1732979364b27b714f898a43ddc20a6:
+  - https://github.com/kredencz/pyblish-kredenc.git
+  - https://github.com/mkolar/ftrack-hooks.git
+  - https://github.com/mkolar/maya-capture-gui.git
+  - https://github.com/pyblish/pyblish-base.git
+  - https://github.com/pyblish/pyblish-maya.git
+  - https://github.com/pyblish/pyblish-nuke.git
+  - https://github.com/pyblish/pyblish-lite.git
+  - https://github.com/pyblish/pyblish-nukestudio.git
+  - https://github.com/pyblish/pyblish-deadline.git
+  - https://github.com/pyblish/pyblish-ftrack.git
+  - https://github.com/pyblish/pyblish-houdini.git
+  - https://bitbucket.org/ftrack/ftrack-python-legacy-api.git
+  - https://bitbucket.org/ftrack/ftrack-connect.git
+  - https://bitbucket.org/ftrack/ftrack-connect-maya.git
+  - https://bitbucket.org/ftrack/ftrack-connect-nuke.git
+  - https://bitbucket.org/ftrack/ftrack-connect-rv.git
+  - https://bitbucket.org/ftrack/ftrack-connect-nuke-studio.git
+  - https://github.com/tokejepsen/ftrack-connect-environment.git:
     - python $REPO_PATH/environment.py
-  - https://github.com/mkolar/kredenc-environment.git:
     - python -m ftrack_connect
 name: kredenc-environment
