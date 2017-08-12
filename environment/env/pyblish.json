@@ -1,0 +1,7 @@
+{
+    "PYBLISHPLUGINPATH": [
+        "{CONDA_GIT_REPOSITORY}\\pyblish-ftrack\\pyblish_ftrack\\plugins",
+        "{CONDA_GIT_REPOSITORY}\\pyblish-deadline\\pyblish_deadline\\plugins",
+		    "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\PYBLISHPLUGINPATH"
+    ]
+}

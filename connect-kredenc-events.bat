@@ -1,0 +1,1 @@
+%~dp0..\..\..\startup --suppress-environment-update --environment environment_events.yml --attached

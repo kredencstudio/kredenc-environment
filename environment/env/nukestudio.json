@@ -1,0 +1,11 @@
+{
+    "PYBLISHPLUGINPATH": [
+        "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\PYBLISHPLUGINPATH\\nukestudio"
+    ],
+    "HIERO_PLUGIN_PATH": [
+        "{CONDA_GIT_REPOSITORY}\\pyblish-nukestudio\\pyblish_nukestudio\\hiero_plugin_path"
+    ],
+    "PYTHONPATH": [
+        "{CONDA_GIT_REPOSITORY}\\pyblish-nukestudio\\pyblish_nukestudio\\hiero_plugin_path"
+    ]
+}

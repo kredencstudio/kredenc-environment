@@ -2,35 +2,35 @@ channels:
 - menpo
 dependencies:
 - python=2.7
-- ffmpeg
 - pip
+- ffmpeg
 - pip:
   - PySide
   - clique
-  - lucidity
-  - pyperclip
   - arrow
-  - ftrack-python-api
+  - riffle
 - git:
-  - https://github.com/abstractfactory/maya-capture.git@bdea21ad0cfa008b70d3419438687faf535e85b7
+  - https://github.com/pyblish/pyblish-base.git@437234e6bb59b50763a388f8d411b558f9203701
+  - https://github.com/pyblish/pyblish-nuke.git@f9f593341128aaad11b0065cc20569694b83ba0c
+  - https://github.com/pyblish/pyblish-lite.git@5c9bd64bc649a1537f79682866a37258639b66a0
+  - https://github.com/pyblish/pyblish-nukestudio.git@3ba98e6abebc602657436e16bf8b9c3f896973d6
+  - https://github.com/pyblish/pyblish-deadline.git@10c1a4ff3fd4f44dc7ff34f104fa41a62adb3091
+  - https://github.com/pyblish/pyblish-ftrack.git@d21d185cc327bc360bb8d2b93305f64218bdb747
+  - https://bitbucket.org/ftrack/ftrack-python-legacy-api.git@97cb35a6ae98958f95e61a7925701d9e8eea375d
+  - https://bitbucket.org/ftrack/ftrack-connect.git@88633ab298799eccdfddd0b897b7615bac1aa952
+  - https://bitbucket.org/ftrack/ftrack-connect-nuke.git@d1b8a32bfddf71541b8ccd954198b7adda674792
+  - https://bitbucket.org/ftrack/ftrack-connect-nuke-studio.git@d97733435037c54a7d091df3f4ecafef11d41b03
+  - https://bitbucket.org/ftrack/ftrack-connect-maya.git@23c7ffa6ee97e8032180246a585428d09c474ea3
+  - https://bitbucket.org/ftrack/ftrack-connect-rv.git@a1810c5309312c3aa4aa7855beeda44ee798c279
+  - https://bitbucket.org/ftrack/ftrack-python-api
   - https://github.com/kredencz/pyblish-kredenc.git
-  - https://github.com/mkolar/ftrack-hooks.git
-  - https://github.com/mkolar/maya-capture-gui.git
-  - https://github.com/pyblish/pyblish-base.git
-  - https://github.com/pyblish/pyblish-maya.git
-  - https://github.com/pyblish/pyblish-nuke.git
-  - https://github.com/pyblish/pyblish-lite.git
-  - https://github.com/pyblish/pyblish-nukestudio.git
-  - https://github.com/pyblish/pyblish-deadline.git
-  - https://github.com/pyblish/pyblish-ftrack.git
-  - https://github.com/pyblish/pyblish-houdini.git
-  - https://bitbucket.org/ftrack/ftrack-python-legacy-api.git
-  - https://bitbucket.org/ftrack/ftrack-connect.git
-  - https://bitbucket.org/ftrack/ftrack-connect-maya.git
-  - https://bitbucket.org/ftrack/ftrack-connect-nuke.git
-  - https://bitbucket.org/ftrack/ftrack-connect-rv.git
-  - https://bitbucket.org/ftrack/ftrack-connect-nuke-studio.git
-  - https://github.com/tokejepsen/ftrack-connect-environment.git:
+  - https://github.com/mkolar/ftrack-hooks.git@072a6ea13d86a76b02f9e75c9dffdc3ee503671c
+  - https://github.com/mkolar/lucidity.git@13f8efeaf99157239984bba79d31620c5338bcdb
+  - https://bitbucket.org/ftrack/QtExt.git@f88d1db8d5b7a0f5162f29a0701166d3be24fd19
+  - https://bitbucket.org/milankolar/ftrack-events-environment.git
+  - https://github.com/tokejepsen/ftrack-connect-environment.git@fa51c5d0d4cc386dd124cbb6a814087583d07c3f:
+    - python $REPO_PATH/environment.py
+  - https://github.com/kredencz/kredenc-environment.git:
     - python $REPO_PATH/environment.py
     - python -m ftrack_connect
 name: kredenc-environment

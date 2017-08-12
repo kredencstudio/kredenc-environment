@@ -1,0 +1,17 @@
+dependencies:
+- python=2.7
+- pip
+- pip:
+  - PySide
+  - clique
+  - arrow
+  - riffle
+- git:
+  - https://bitbucket.org/ftrack/ftrack-python-legacy-api.git@97cb35a6ae98958f95e61a7925701d9e8eea375d
+  - https://bitbucket.org/ftrack/ftrack-connect.git@88633ab298799eccdfddd0b897b7615bac1aa952
+  - https://bitbucket.org/ftrack/QtExt.git@f88d1db8d5b7a0f5162f29a0701166d3be24fd19
+  - https://bitbucket.org/ftrack/ftrack-python-api
+  - https://github.com/kredencz/kredenc-environment.git:
+    - python $REPO_PATH/environment_events.py
+    - python -m ftrack_connect
+name: spoon-environment
