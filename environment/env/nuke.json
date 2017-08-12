@@ -1,6 +1,6 @@
 {
     "PYBLISHPLUGINPATH": [
-        "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\PYBLISHPLUGINPATH\\nuke"
+        "{CONDA_GIT_REPOSITORY}\\pyblish-kredenc\\pyblish_kredenc\\plugins\\nuke"
     ],
     "NUKE_PATH": [
         "{CONDA_GIT_REPOSITORY}\\pyblish-nuke\\pyblish_nuke\\nuke_path",

@@ -11,21 +11,11 @@
     "MAYA_DISABLE_CER": [
         "1"
     ],
-    "MAYA_RENDER_SETUP_GLOBAL_TEMPLATE_PATH": [
-        "{STUDIO_REPOS}\\maya\\RStemplates"
-    ],
-    "MAYA_RENDER_SETUP_GLOBAL_PRESETS_PATH": [
-        "{STUDIO_REPOS}\\maya\\renderPresets"
-    ],
     "PYTHONPATH": [
-        "{STUDIO_TOOLS}\\maya\\maya-kredenc\\scripts",
-        "{STUDIO_REPOS}\\maya\\scripts",
-        "{STUDIO_TOOLS}\\pyblish\\pyblish-maya\\pyblish_maya\\pythonpath",
-        "{STUDIO_REPOS}\\DeadlineRepository9\\submission\\Maya\\Client",
-        "{STUDIO_TOOLS}\\maya\\maya-capture",
-        "{STUDIO_TOOLS}\\maya\\maya-capture-gui",
-        "{STUDIO_TOOLS}\\maya\\maya-look-hookup",
-        "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\MAYA_PYTHONPATH"
-        "{CONDA_GIT_REPOSITORY}\\yblish-kredenc\\resource\\maya_pythonpath"
+        "{CONDA_GIT_REPOSITORY}\\pyblish-maya\\pyblish_maya\\pythonpath",
+        "{CONDA_GIT_REPOSITORY}\\maya-capture",
+        "{CONDA_GIT_REPOSITORY}\\maya-capture-gui",
+        "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\MAYA_PYTHONPATH",
+        "{CONDA_GIT_REPOSITORY}\\pyblish-kredenc\\resource\\maya_pythonpath"
     ]
 }

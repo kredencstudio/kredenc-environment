@@ -20,7 +20,7 @@ paths:
         pattern: '{@shot}/publish/render/{Task.name}'
 
 
-    # Publish files
+    # iles
 
     shot.sceneBase:
         pattern: '{Project.code}_{Shot.name}_{Task.name}_{version}'
@@ -45,53 +45,3 @@ paths:
         pattern: '{@shot.render}/{Task.name}/{renderlayer}/{version}'
     shot.render.file:
         pattern: '{@shot.render.folder}/{@shot.sceneBase}_{renderlayer}.{seq}.exr'
-
-
-
-
-    # =================
-    # ASSET WORKFLOW
-    # ==================
-
-    # Asset root
-    asset:
-        pattern: '{ft_hierarchy}'
-
-    # Asset folders
-    asset.task.publish:
-        pattern: '{@asset}/publish'
-    asset.task.work:
-        pattern: '{@asset}/work/{Task.name}'
-    asset.render:
-        pattern: '{@asset}/publish/render/{Task.name}'
-
-
-    # Publish files
-
-    asset.sceneBase:
-        pattern: '{Project.code}_{Asset_Build.name}_{Task.name}_{version}{subset}'
-    asset.publish.base:
-        pattern: '{Project.code}_{Asset_Build.name}_{family}_{item}_{version}{subset}'
-    asset.publish.basemaster:
-        pattern: '{Project.code}_{Asset_Build.name}_{family}_{item}{subset}'
-
-
-    asset.work.scene:
-        pattern: '{@asset.task.work}/{@asset.sceneBase}.{ext}'
-    asset.publish.scene:
-        pattern: '{@asset.task.publish}/scenes/{Task.name}/{@asset.sceneBase}.{ext}'
-
-
-    asset.publish.item:
-        pattern: '{@asset.task.publish}/{family}/{item}/{version}/{@asset.publish.base}.{ext}'
-    asset.publish.master:
-        pattern: '{@asset.task.publish}/{family}/{item}/{@asset.publish.basemaster}.{ext}'
-
-
-    asset.pack.file:
-        pattern: '{@asset.task.publish}/pack/{@asset.sceneBase}/{@asset.sceneBase}.{ext}'
-
-    asset.render.folder:
-        pattern: '{@asset.render}/{Task.name}/{renderlayer}/{version}'
-    asset.render.file:
-        pattern: '{@asset.render.folder}/{@asset.sceneBase}_{renderlayer}.{seq}.exr'

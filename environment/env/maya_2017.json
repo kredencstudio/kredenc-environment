@@ -1,13 +1,11 @@
 {
     "MAYA_PLUG_IN_PATH": [
-        "{STUDIO_REPOS}\\maya\\2017\\plugins",
-        "{STUDIO_REPOS}\\maya\\SOuP_2017_01_25\\plug-ins\\maya2017_win"
+        "{STUDIO_REPOS}\\maya\\2017\\plugins"
     ],
     "MAYA_MODULE_PATH": [
         "{STUDIO_REPOS}\\maya\\2017\\modules"
     ],
     "MAYA_SHELF_PATH": [
-        "{STUDIO_TOOLS}\\maya\\maya-kredenc\\shelves\\2017",
-        "{STUDIO_REPOS}\\maya\\SOuP_2017_01_25\\shelves"
+        "{CONDA_GIT_REPOSITORY}\\maysa-kredenc\\shelves\\2017"
     ]
 }
