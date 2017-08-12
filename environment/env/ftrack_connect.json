@@ -10,6 +10,7 @@
         "{CONDA_GIT_REPOSITORY}\\pyblish-ftrack\\pyblish_ftrack",
         "{CONDA_GIT_REPOSITORY}\\ftrack-hooks\\djv_plugin",
         "{CONDA_GIT_REPOSITORY}\\ftrack-hooks\\dynamic_environment",
+        "{CONDA_GIT_REPOSITORY}\\ftrack-kredenc-hooks\\actions",
         "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\FTRACK_CONNECT_PLUGIN_PATH"
     ]
 }

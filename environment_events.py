@@ -3,11 +3,13 @@ from conda_git_deployment import utils
 
 root = os.path.dirname(__file__)
 
+conda = os.environ['CONDA_GIT_REPOSITORY']
+
 env = {}
 
 # FTRACK_CONNECT_PLUGIN_PATH
 env["FTRACK_CONNECT_PLUGIN_PATH"] = [
-    os.path.join(root, "environment", "FTRACK_CONNECT_EVENTS")
+    os.path.join(conda, 'ftrack-kredenc-hooks', "server_events")
 ]
 
 # QT_PREFERRED_BINDING
