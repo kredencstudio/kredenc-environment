@@ -6,6 +6,6 @@
         "{STUDIO_REPOS}\\maya\\2017\\modules"
     ],
     "MAYA_SHELF_PATH": [
-        "{CONDA_GIT_REPOSITORY}\\maysa-kredenc\\shelves\\2017"
+        "{CONDA_GIT_REPOSITORY}\\maya-kredenc\\shelves\\2017"
     ]
 }
