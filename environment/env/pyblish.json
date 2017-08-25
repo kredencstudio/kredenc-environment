@@ -2,6 +2,12 @@
     "PYBLISHPLUGINPATH": [
         "{CONDA_GIT_REPOSITORY}\\pyblish-ftrack\\pyblish_ftrack\\plugins",
         "{CONDA_GIT_REPOSITORY}\\pyblish-deadline\\pyblish_deadline\\plugins",
-		"{CONDA_GIT_REPOSITORY}\\pyblish-kredenc\\pyblish_kredenc\\plugins"
+		    "{CONDA_GIT_REPOSITORY}\\pyblish-kredenc\\pyblish_kredenc\\plugins"
+    ],
+    "PYTHONPATH": [
+        "{CONDA_GIT_REPOSITORY}\\pyblish-kredenc"
+    ],
+    "PYBLISH_QML_PYQT5": [
+        "{STUDIO_SOFT}\\python\\packages\\python-qt5"
     ]
 }

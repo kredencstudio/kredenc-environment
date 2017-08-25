@@ -1,0 +1,28 @@
+{
+    "HOUDINI_PATH": [
+        "{CONDA_GIT_REPOSITORY}\\pyblish-houdini\\pyblish_houdini\\houdini_path",
+        "{STUDIO_REPOS}\\solidangle\\htoa\\15.5.632\\htoa-1.13.0_r40c1357_houdini-15.5.632\\htoa-1.13.0_r40c1357_houdini-15.5.632",
+        "&"
+    ],
+    "HSITE": [
+        "{STUDIO_REPOS}\\houdini\\HSITE"
+    ],
+    "HOUDINI_ASSET_STORE_PATH": [
+        "{STUDIO_REPOS}\\houdini\\asset_store"
+    ],
+    "PYBLISHPLUGINPATH": [
+        "{CONDA_GIT_REPOSITORY}\\pyblish-kredenc\\pyblish_kredenc\\plugins\\houdini"
+    ],
+    "PYTHONPATH": [
+        "{CONDA_GIT_REPOSITORY}\\houdini-kredenc"
+    ],
+    "HOUDINI_OTLSCAN_PATH": [
+        "{STUDIO_REPOS}\\houdini\\qlib\\otls\\base",
+        "{STUDIO_REPOS}\\houdini\\qlib\\otls\\experimental",
+        "{STUDIO_REPOS}\\houdini\\qlib\\otls\\future",
+        "&"
+    ],
+    "PATH": [
+        "{STUDIO_REPOS}\\solidangle\\htoa\\15.5.632\\htoa-1.13.0_r40c1357_houdini-15.5.632\\htoa-1.13.0_r40c1357_houdini-15.5.632\\scripts\\bin"
+    ]
+}

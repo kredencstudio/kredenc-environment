@@ -1,0 +1,18 @@
+{
+    "MAYA_MODULE_PATH": [
+        "{STUDIO_SOFT}\\arnold\\mtoa_2017_1.4.2.0"
+    ],
+    "MAYA_RENDER_DESC_PATH": [
+        "{STUDIO_SOFT}\\arnold\\mtoa_2017_1.4.2.0"
+    ],
+    "ARNOLD_PLUGIN_PATH": [
+        "{STUDIO_SOFT}\\arnold\\arnold_plugin_path",
+        "{STUDIO_SOFT}\\arnold\\alShaders-win-1.0.0rc18-ai4.2.12.2\\bin"
+    ],
+    "MAYA_CUSTOM_TEMPLATE_PATH": [
+        "{STUDIO_SOFT}\\arnold\\alShaders-win-1.0.0rc18-ai4.2.12.2\\aexml"
+    ],
+    "MTOA_TEMPLATES_PATH": [
+        "{STUDIO_SOFT}\\arnold\\alShaders-win-1.0.0rc18-ai4.2.12.2\\ae"
+    ]
+}

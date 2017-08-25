@@ -1,5 +1,22 @@
 {
+    "STUDIO_REPOS": [
+      "\\\\kre-c01\\share\\core\\repos"
+    ],
+    "STUDIO_SOFT": [
+      "\\\\kre-c01\\share\\core\\software"
+    ],
+    "FOLDER_TEMPLATES_PATH": [
+        "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\templates"
+    ],
+    "FTRACK_APP_ENVIRONMENTS": [
+        "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\env"
+    ],
+    "PATH": [
+        "{STUDIO_SOFT}\\djv\\bin",
+        "{STUDIO_SOFT}\\7za",
+        "{STUDIO_SOFT}\\imagemagick"
+    ],
     "PYTHONPATH": [
-        "",
+        "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\PYTHONPATH"
     ]
 }
