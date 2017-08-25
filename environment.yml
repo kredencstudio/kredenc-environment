@@ -10,6 +10,7 @@ dependencies:
   - arrow
   - riffle
 - git:
+  - https://github.com/tokejepsen/filelink.git@01c782e4ce8043914cc09908392747954f5284b1
   - https://github.com/pyblish/pyblish-base.git@437234e6bb59b50763a388f8d411b558f9203701
   - https://github.com/pyblish/pyblish-nuke.git@f9f593341128aaad11b0065cc20569694b83ba0c
   - https://github.com/pyblish/pyblish-maya.git
@@ -33,6 +34,7 @@ dependencies:
   - https://github.com/mkolar/lucidity.git
   - https://github.com/mkolar/maya-capture.git
   - https://github.com/BigRoy/maya-capture-gui.git
+  - https://kredencstudio@bitbucket.org/kredenc/maya-kredenc.git
   - https://bitbucket.org/milankolar/ftrack-events-environment.git
   - https://github.com/tokejepsen/ftrack-connect-environment.git@fa51c5d0d4cc386dd124cbb6a814087583d07c3f:
     - python $REPO_PATH/environment.py

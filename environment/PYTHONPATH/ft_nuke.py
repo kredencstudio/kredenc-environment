@@ -74,7 +74,7 @@ class Write:
             'script', 'Script Name', '[file rootname [file tail [value root.name] ] ]'))
 
         w.addKnob(nuke.EvalString_Knob('output_exp', 'Output expression',
-                                       "[value task_output]/[value version]/[value script].####.exr"))
+                                       "[value task_output]/[value name]/[value version]/[value script].####.exr"))
 
         w.addKnob(nuke.EvalString_Knob('version_string', 'version', r'[python \"\".join(nukescripts.version_get(nuke.root().knob(\"name\").value(), \"v\"))]'))
 
@@ -101,7 +101,9 @@ class Write:
         script = w['script'].evaluate()
         version = w['version_string'].evaluate()
         script = w['script'].evaluate()
-        path = os.path.join(task_output, 'render', version, (script +'.####.exr'))
+        name = w['output_exp'].evaluate()
+        # path = os.path.join(task_output, version, (script +'.####.exr'))
+        path = os.path.join(task_output, name)
         path = path.replace('\\', '/')
         w.knob('file').fromScript(path)
         print(path)

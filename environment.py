@@ -6,6 +6,7 @@ from conda_git_deployment import utils
 root_dir = os.path.dirname(__file__)
 
 environments = [
+    'global',
     'ftrack_connect',
     'pyblish'
     ]

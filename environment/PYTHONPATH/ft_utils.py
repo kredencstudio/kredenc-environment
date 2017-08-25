@@ -329,12 +329,15 @@ def getSchema(entity):
     print project
 
     conda_dir = os.environ["CONDA_GIT_REPOSITORY"]
+    template_path = os.environ.get('FOLDER_TEMPLATES_PATH')
+    if not template_path:
+        template_path = os.path.join(conda_dir, 'kredenc-environment', 'environment', 'templates')
 
-    schema_path = os.path.join(conda_dir, 'spoon-environment', 'environment', 'templates', (schema + '_' + project.get('name') + '.yml'))
+    schema_path = os.path.join(template_path, (schema + '_' + project.get('name') + '.yml'))
     if not os.path.exists(schema_path):
-        schema_path = os.path.join(conda_dir, 'spoon-environment', 'environment', 'templates', (schema + '.yml'))
+        schema_path = os.path.join(template_path, (schema + '.yml'))
     if not os.path.exists(schema_path):
-        schema_path = os.path.join(conda_dir, 'spoon-environment', 'environment', 'templates', 'default.yml')
+        schema_path = os.path.join(template_path, 'default.yml')
 
     schema = lucidity.Schema.from_yaml(schema_path)
 
