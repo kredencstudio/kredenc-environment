@@ -1,10 +1,4 @@
 {
-    "STUDIO_REPOS": [
-      "\\\\kre-c01\\share\\core\\repos"
-    ],
-    "STUDIO_SOFT": [
-      "\\\\kre-c01\\share\\core\\software"
-    ],
     "FOLDER_TEMPLATES_PATH": [
         "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\templates"
     ],
@@ -19,5 +13,11 @@
     ],
     "PYTHONPATH": [
         "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\PYTHONPATH"
+    ],
+    "PYTHONDONTWRITEBYTECODE": [
+        "1"
+    ],
+    "PIPELINE_IMAGES": [
+      "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\images"
     ]
 }

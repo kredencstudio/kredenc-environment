@@ -4,6 +4,11 @@
     ],
     "NUKE_PATH": [
         "{CONDA_GIT_REPOSITORY}\\pyblish-nuke\\pyblish_nuke\\nuke_path",
-        "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\NUKE_PATH"
+        "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\NUKE_PATH",
+        "{STUDIO_SOFT}\\arnold\\cryptomatte\\nuke",
+        "{STUDIO_REPOS}\\nuke"
+    ],
+    "PYTHONPATH": [
+        "{STUDIO_REPOS}\\nuke\\scripts"
     ]
 }
