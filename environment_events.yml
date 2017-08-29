@@ -3,9 +3,6 @@ dependencies:
 - pip
 - pip:
   - PySide
-  - clique
-  - arrow
-  - riffle
 - git:
   - https://bitbucket.org/ftrack/ftrack-python-legacy-api.git@97cb35a6ae98958f95e61a7925701d9e8eea375d
   - https://bitbucket.org/ftrack/ftrack-connect.git@88633ab298799eccdfddd0b897b7615bac1aa952
