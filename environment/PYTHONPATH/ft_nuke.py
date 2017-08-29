@@ -26,8 +26,7 @@ def projectFavorites():
             'shot.render': 'Task output',
         }
 
-    dir = os.path.dirname(os.path.dirname(__file__))
-    icon_path = os.path.join(dir, 'resource', 'images', 'ft_logo.png')
+    icon_path = os.path.join(os.environ['PIPELINE_IMAGES'], 'ft_logo.png')
 
     for path in paths:
         if path[1].name in pathNameMapping.keys():

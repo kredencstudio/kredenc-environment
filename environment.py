@@ -11,6 +11,13 @@ environments = [
     'pyblish'
     ]
 
+
+environment_start = {}
+environment_start["STUDIO_REPOS"] = [os.path.join(r'\\kre-c01', 'share', 'core', 'repos')]
+environment_start["STUDIO_SOFT"] = [os.path.join(r'\\kre-c01', 'share', 'core', 'software')]
+utils.write_environment(environment_start)
+
+
 environment = launch_tools.pass_env(environments)
 utils.write_environment(environment)
 

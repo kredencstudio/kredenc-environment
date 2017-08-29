@@ -1,4 +1,5 @@
 import nuke
+import traceback
 
 print 'executing NUKE_PATH menu.py'
 
@@ -13,6 +14,9 @@ try:
     # add custom fields do write node
     nuke.addOnUserCreate(ft_nuke.Write().add_auto_path, nodeClass='Write')
 except:
+   print '-'*60
+   traceback.print_exc(file=sys.stdout)
+   print '-'*60
    print 'could not set project folders. Ftrack might not be set up correctly'
 
 
@@ -26,6 +30,7 @@ file_menu.addCommand("pyblish", 'pyblish_nuke.show()', "`")
 
 
 pyblish.api.register_gui('pyblish_lite')
+pyblish.api.register_gui('pyblish_qml')
 
 print 'finished with NUKE_PATH menu.py'
 # pyblish.api.register_gui('pyblish_qml')
