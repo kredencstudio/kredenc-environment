@@ -11,15 +11,11 @@ environments = [
     'pyblish'
     ]
 
+os.environ['PYTHONDONTWRITEBYTECODE'] = '1'
 
-environment_start = {}
-environment_start["STUDIO_REPOS"] = [os.path.join(r'\\kre-c01', 'share', 'core', 'repos')]
-environment_start["STUDIO_SOFT"] = [os.path.join(r'\\kre-c01', 'share', 'core', 'software')]
-utils.write_environment(environment_start)
-
+os.environ.setdefault('STUDIO_REPOS', os.path.join(r'\\kre-c01', 'share', 'core', 'repos'))
+os.environ.setdefault('STUDIO_SOFT', os.path.join(r'\\kre-c01', 'share', 'core', 'software'))
+os.environ.setdefault('STUDIO_USER', getpass.getuser())
 
 environment = launch_tools.pass_env(environments)
 utils.write_environment(environment)
-
-
-os.environ.setdefault('systemuser', getpass.getuser())

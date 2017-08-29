@@ -1,4 +1,13 @@
 {
+    "STUDIO_SOFT": [
+      "{STUDIO_SOFT}"
+    ],
+    "STUDIO_REPOS": [
+      "{STUDIO_REPOS}"
+    ],
+    "STUDIO_USER": [
+      "{STUDIO_USER}"
+    ],
     "FOLDER_TEMPLATES_PATH": [
         "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\templates"
     ],
