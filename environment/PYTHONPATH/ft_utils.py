@@ -6,7 +6,8 @@ import sys
 import json
 import base64
 import lucidity
-from conda.common import yaml
+# from conda.common import yaml
+import yaml
 
 def get_ftrack_connect_path():
 

@@ -30,7 +30,7 @@ file_menu.addCommand("pyblish", 'pyblish_nuke.show()', "`")
 
 
 pyblish.api.register_gui('pyblish_lite')
-pyblish.api.register_gui('pyblish_qml')
+# pyblish.api.register_gui('pyblish_qml')
 
 print 'finished with NUKE_PATH menu.py'
 # pyblish.api.register_gui('pyblish_qml')

@@ -3,15 +3,10 @@ channels:
 dependencies:
 - python=2.7
 - ffmpeg
-- requests
-- six
-- pyparsing
+- yaml
 - pip
 - pip:
   - PySide
-  - clique
-  - arrow
-  - riffle
   - git+https://github.com/pyqt/python-qt5.git#python-qt5
 - git:
   - https://github.com/tokejepsen/filelink.git@01c782e4ce8043914cc09908392747954f5284b1

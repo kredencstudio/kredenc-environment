@@ -6,8 +6,5 @@
     ],
     "PYTHONPATH": [
         "{CONDA_GIT_REPOSITORY}\\pyblish-kredenc"
-    ],
-    "PYBLISH_QML_PYQT5": [
-        "{STUDIO_SOFT}\\python\\packages\\python-qt5"
     ]
 }
