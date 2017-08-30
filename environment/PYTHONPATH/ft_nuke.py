@@ -51,13 +51,6 @@ class Write:
     def create(self):
         w = nuke.createNode('Write', inpanel=True)
 
-        count = 1
-        while nuke.exists(self.name + str(count)):
-            count += 1
-        w.knob('name').setValue(self.name + str(count))
-
-        w.knob('name').setValue(self.name + str(count))
-
         self.add_auto_path(w=w)
 
     def add_auto_path(self, w=None):
@@ -100,9 +93,9 @@ class Write:
         script = w['script'].evaluate()
         version = w['version_string'].evaluate()
         script = w['script'].evaluate()
-        name = w['output_exp'].evaluate()
-        # path = os.path.join(task_output, version, (script +'.####.exr'))
-        path = os.path.join(task_output, name)
+        name = w['name'].value()
+        print name
+        path = os.path.join(task_output, name, version, (script +'.####.exr'))
         path = path.replace('\\', '/')
         w.knob('file').fromScript(path)
         print(path)
@@ -111,4 +104,4 @@ class Write:
         w = w or nuke.thisNode()
         path = w['output_exp'].getText()
         w.knob('file').fromScript(path)
-        print path
+        print(path)
