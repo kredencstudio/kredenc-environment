@@ -26,8 +26,7 @@ def projectFavorites():
             'shot.render': 'Task output',
         }
 
-    dir = os.path.dirname(os.path.dirname(__file__))
-    icon_path = os.path.join(dir, 'resource', 'images', 'ft_logo.png')
+    icon_path = os.path.join(os.environ['PIPELINE_IMAGES'], 'ft_logo.png')
 
     for path in paths:
         if path[1].name in pathNameMapping.keys():
@@ -52,13 +51,6 @@ class Write:
     def create(self):
         w = nuke.createNode('Write', inpanel=True)
 
-        count = 1
-        while nuke.exists(self.name + str(count)):
-            count += 1
-        w.knob('name').setValue(self.name + str(count))
-
-        w.knob('name').setValue(self.name + str(count))
-
         self.add_auto_path(w=w)
 
     def add_auto_path(self, w=None):
@@ -74,7 +66,7 @@ class Write:
             'script', 'Script Name', '[file rootname [file tail [value root.name] ] ]'))
 
         w.addKnob(nuke.EvalString_Knob('output_exp', 'Output expression',
-                                       "[value task_output]/[value version]/[value script].####.exr"))
+                                       "[value task_output]/[value name]/[value version]/[value script].####.exr"))
 
         w.addKnob(nuke.EvalString_Knob('version_string', 'version', r'[python \"\".join(nukescripts.version_get(nuke.root().knob(\"name\").value(), \"v\"))]'))
 
@@ -101,7 +93,9 @@ class Write:
         script = w['script'].evaluate()
         version = w['version_string'].evaluate()
         script = w['script'].evaluate()
-        path = os.path.join(task_output, 'render', version, (script +'.####.exr'))
+        name = w['name'].value()
+        print name
+        path = os.path.join(task_output, name, version, (script +'.####.exr'))
         path = path.replace('\\', '/')
         w.knob('file').fromScript(path)
         print(path)
@@ -110,4 +104,4 @@ class Write:
         w = w or nuke.thisNode()
         path = w['output_exp'].getText()
         w.knob('file').fromScript(path)
-        print path
+        print(path)

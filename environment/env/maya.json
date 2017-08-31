@@ -15,7 +15,11 @@
         "{CONDA_GIT_REPOSITORY}\\pyblish-maya\\pyblish_maya\\pythonpath",
         "{CONDA_GIT_REPOSITORY}\\maya-capture",
         "{CONDA_GIT_REPOSITORY}\\maya-capture-gui",
+        "{CONDA_GIT_REPOSITORY}\\maya-kredenc\\scripts",
         "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\MAYA_PYTHONPATH",
         "{CONDA_GIT_REPOSITORY}\\pyblish-kredenc\\resource\\maya_pythonpath"
+    ],
+    "XBMLANGPATH": [
+        "{CONDA_GIT_REPOSITORY}\\maya-kredenc\\icons"
     ]
 }

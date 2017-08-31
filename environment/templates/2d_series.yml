@@ -35,14 +35,15 @@ paths:
     shot.publish.scene:
         pattern: '{@shot.task.publish}/scenes/{Task.name}/{@shot.sceneBase}.{ext}'
 
-
     shot.publish.item:
         pattern: '{@shot.task.publish}/{family}/{item}/{version}/{@shot.publish.base}.{ext}'
     shot.publish.master:
         pattern: '{@shot.task.publish}/{family}/{item}/{@shot.publish.basemaster}.{ext}'
 
     shot.render.folder:
-        pattern: '{@shot.render}/{Task.name}/{renderlayer}/{version}'
+        pattern: '{@shot.render}/{renderlayer}/{version}'
+    shot.render.comp:
+        pattern: '{@shot.render}/{version}'
     shot.render.file:
         pattern: '{@shot.render.folder}/{@shot.sceneBase}_{renderlayer}.{seq}.exr'
 
@@ -88,10 +89,9 @@ paths:
         pattern: '{@asset.task.publish}/{family}/{item}/{@asset.publish.basemaster}.{ext}'
 
 
-    asset.pack.file:
-        pattern: '{@asset.task.publish}/pack/{@asset.sceneBase}/{@asset.sceneBase}.{ext}'
-
     asset.render.folder:
         pattern: '{@asset.render}/{Task.name}/{renderlayer}/{version}'
+    asset.render.comp:
+        pattern: '{@asset.render}/{Task.name}/{version}'
     asset.render.file:
         pattern: '{@asset.render.folder}/{@asset.sceneBase}_{renderlayer}.{seq}.exr'

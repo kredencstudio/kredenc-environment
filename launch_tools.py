@@ -85,7 +85,7 @@ def pass_env(names):
                 for path in env_add[variable]:
                     keys = re.findall(r'{.*?}', path)
                     for key in keys:
-                        found_key = os.path.abspath(os.environ.get(key[1:-1]))
+                        found_key = os.environ.get(key[1:-1])
                         path = path.replace(key, found_key)
 
                     paths.append(path)
@@ -93,12 +93,17 @@ def pass_env(names):
 
                 env_add[variable] = paths
 
-        print ''
-        print(env_file.upper())
-        pprint.pprint(env_add)
-        environment.update(env_add)
+        print('Adding {} to environment.'.format(env_file.upper()))
 
+        for key in env_add:
+            if key in environment.keys():
+                environment[key] = list(set(environment[key] + env_add[key]))
+            else:
+                environment[key] = env_add[key]
+
+    print ''
     print 'ENVIRONMENT'
     pprint.pprint(environment)
+    print ''
 
     return environment

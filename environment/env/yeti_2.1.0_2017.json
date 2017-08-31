@@ -1,0 +1,20 @@
+{
+    "MAYA_MODULE_PATH": [
+        "{STUDIO_SOFT}\\peregrinelabs\\Yeti_Maya2017_v2.1.0"
+    ],
+    "MTOA_EXTENSION_PATH": [
+        "{STUDIO_SOFT}\\peregrinelabs\\Yeti_Maya2017_v2.1.0\\plug-ins"
+    ],
+    "MTOA_PROCEDURAL_PATH": [
+        "{STUDIO_SOFT}\\peregrinelabs\\Yeti_Maya2017_v2.1.0\\bin"
+    ],
+    "PATH": [
+        "{STUDIO_SOFT}\\peregrinelabs\\Yeti_Maya2017_v2.1.0\\bin"
+    ],
+    "ARNOLD_PLUGIN_PATH": [
+        "{STUDIO_SOFT}\\peregrinelabs\\Yeti_Maya2017_v2.1.0\\bin"
+    ],
+    "peregrinel_LICENSE": [
+        "5055@kre-c01"
+    ]
+}

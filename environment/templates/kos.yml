@@ -13,11 +13,11 @@ paths:
     # Task folders
 
     shot.task.publish:
-        pattern: '{@shot}/publish'
+        pattern: '{@shot}/{Task.name}/publish'
     shot.task.work:
-        pattern: '{@shot}/work/{Task.name}'
+        pattern: '{@shot}/{Task.name}/work'
     shot.render:
-        pattern: '{@shot}/publish/render/{Task.name}'
+        pattern: '{@shot}/{Task.name}/render'
 
 
     # Publish files

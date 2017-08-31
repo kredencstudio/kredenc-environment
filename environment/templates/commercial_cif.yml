@@ -1,0 +1,120 @@
+paths:
+
+    workBase:
+        pattern: 'work'
+    assetBase:
+        pattern: 'assets'
+    renderBase:
+        pattern: 'renders'
+    sourceBase:
+        pattern: 'resources'
+
+
+
+    # =================
+    # SHOTS WORKFLOW
+    # ==================
+
+    # Shot folders
+
+    shot.source:
+        pattern: '{@sourceBase}/{ft_hierarchy}'
+    shot:
+        pattern: '{ft_hierarchy}'
+    shot.output:
+        pattern: '{@renderBase}/{ft_hierarchy}'
+
+
+    # Task folders
+
+    shot.task.publish:
+        pattern: '{@shot}/{Task.name}/publish'
+    shot.task.work:
+        pattern: '{@shot}/{Task.name}/work'
+    shot.task.output:
+        pattern: '{@shot.output}/{Task.name}'
+
+
+    # Publish files
+
+    shot.sceneBase:
+        pattern: '{Project.code}_{Shot.name}_{Task.name}_{version}'
+    shot.fileBase:
+        pattern: '{Project.code}_{Shot.name}_{family}_{item}_{version}{subset}'
+
+
+    shot.work.scene:
+        pattern: '{@shot.task.work}/{@shot.sceneBase}.{ext}'
+    shot.publish.scene:
+        pattern: '{@shot.task.publish}/{@shot.sceneBase}.{ext}'
+
+    shot.publish.item:
+        pattern: '{@shot.task.publish}/{@shot.fileBase}.{ext}'
+    shot.review.file:
+        pattern: '{@shot.task.publish}/preview/{@shot.fileBase}.mp4'
+    shot.abccache.file:
+        pattern: '{@shot.task.publish}/{@shot.sceneBase}_{item}.abc'
+
+    shot.render.folder:
+        pattern: '{@shot.task.output}/{renderlayer}/{version}'
+    shot.render.file:
+        pattern: '{@shot.render.folder}/{@shot.fileBase}_{renderlayer}.{seq}.exr'
+
+    shot.render.folder:
+        pattern: '{@shot.task.output}/{renderlayer}/{version}'
+    shot.render.file:
+        pattern: '{@shot.render.folder}/{@shot.fileBase}_{renderlayer}.{seq}.exr'
+
+    # =================
+    # ASSET WORKFLOW
+    # ==================
+
+    # Asset root
+    asset:
+        pattern: '{ft_hierarchy}'
+    asset.output:
+        pattern: '{@renderBase}/{ft_hierarchy}'
+
+    # Asset folders
+    asset.publish:
+        pattern: '{@asset}/publish'
+    asset.task.publish:
+        pattern: '{@asset}/{Task.name}/publish'
+    asset.task.work:
+        pattern: '{@asset}/{Task.name}/work'
+    asset.task.output:
+        pattern: '{@asset.output}/{Task.name}'
+
+
+    # Asset scene
+    asset.sceneBase:
+        pattern: '{Project.code}_{Asset_Build.name}_{Task.name}_{version}{subset}'
+    # Asset file
+    asset.fileBase:
+        pattern: '{Project.code}_{Asset_Build.name}_{family}_{item}_{version}{subset}'
+
+
+    asset.work.scene:
+        pattern: '{@asset.task.work}/{@asset.sceneBase}.{ext}'
+    asset.publish.scene:
+        pattern: '{@asset.task.publish}/{@asset.sceneBase}.{ext}'
+
+    asset.pack.folder:
+        pattern: '{@asset.task.publish}/packs/{@asset.sceneBase}'
+    asset.pack.file:
+        pattern: '{@asset.pack.folder}/{@asset.sceneBase}.{ext}'
+
+
+    asset.publish.item:
+        pattern: '{@asset.task.publish}/{@asset.fileBase}.{ext}'
+    asset.review.file:
+        pattern: '{@asset.task.publish}/preview/{@asset.fileBase}.mp4'
+    asset.abccache.file:
+        pattern: '{@asset.task.publish}/{@asset.fileBase}.abc'
+    asset.texture.file:
+        pattern: '{@asset.publish}/{item}'
+
+    asset.render.folder:
+        pattern: '{@asset.task.output}/{renderlayer}/{version}'
+    asset.render.file:
+        pattern: '{@asset.render.folder}/{@asset.fileBase}_{renderlayer}.{seq}.exr'

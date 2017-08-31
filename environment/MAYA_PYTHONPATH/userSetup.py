@@ -11,3 +11,6 @@ try:
         print 'Project Folder probably doesn\'t exist'
 except:
     print 'Could not set project folders. Ftrack might not be set up correctly'
+
+import pyblish.api
+pyblish.api.register_gui('pyblish_qml')

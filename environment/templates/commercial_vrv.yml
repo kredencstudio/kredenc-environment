@@ -13,11 +13,11 @@ paths:
     # Task folders
 
     shot.task.publish:
-        pattern: '{@shot}/publish'
+        pattern: '{@shot}/{Task.name}/publish'
     shot.task.work:
-        pattern: '{@shot}/work/{Task.name}'
+        pattern: '{@shot}/{Task.name}/work'
     shot.render:
-        pattern: '{@shot}/publish/render/{Task.name}'
+        pattern: 'renders/{@shot}/{Task.name}'
 
 
     # Publish files
@@ -59,11 +59,11 @@ paths:
 
     # Asset folders
     asset.task.publish:
-        pattern: '{@asset}/publish'
+        pattern: '{@asset}/{Task.name}/publish'
     asset.task.work:
-        pattern: '{@asset}/work/{Task.name}'
+        pattern: '{@asset}/{Task.name}/work'
     asset.render:
-        pattern: '{@asset}/publish/render/{Task.name}'
+        pattern: 'renders/{@asset}/{Task.name}'
 
 
     # Publish files

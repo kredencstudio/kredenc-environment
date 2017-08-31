@@ -47,7 +47,8 @@ paths:
         pattern: '{@shot.render.folder}/{@shot.sceneBase}_{renderlayer}.{seq}.exr'
 
 
-
+    folder.publish.scene:
+        pattern: '{ft_hierarchy}/publish/scenes'
 
     # =================
     # ASSET WORKFLOW

@@ -1,5 +1,32 @@
 {
+    "STUDIO_SOFT": [
+      "{STUDIO_SOFT}"
+    ],
+    "STUDIO_REPOS": [
+      "{STUDIO_REPOS}"
+    ],
+    "STUDIO_USER": [
+      "{STUDIO_USER}"
+    ],
+    "FOLDER_TEMPLATES_PATH": [
+        "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\templates"
+    ],
+    "FTRACK_APP_ENVIRONMENTS": [
+        "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\env"
+    ],
+    "PATH": [
+        "{STUDIO_SOFT}\\djv\\bin",
+        "{STUDIO_SOFT}\\7za",
+        "{STUDIO_SOFT}\\imagemagick",
+        "C:\\Program Files (x86)\\QuickTime\\QTSystem"
+    ],
     "PYTHONPATH": [
-        "",
+        "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\PYTHONPATH"
+    ],
+    "PYTHONDONTWRITEBYTECODE": [
+        "1"
+    ],
+    "PIPELINE_IMAGES": [
+      "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\images"
     ]
 }

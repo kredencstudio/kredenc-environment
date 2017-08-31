@@ -2,10 +2,6 @@
     "FTRACK_APP_ENVIRONMENTS": [
         "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\env"
     ],
-    "PYTHONPATH": [
-        "{CONDA_GIT_REPOSITORY}\\kredenc-environment\\environment\\PYTHONPATH",
-        "{CONDA_GIT_REPOSITORY}\\pyblish-kredenc"
-    ],
     "FTRACK_CONNECT_PLUGIN_PATH": [
         "{CONDA_GIT_REPOSITORY}\\ftrack-connect-rv",
         "{CONDA_GIT_REPOSITORY}\\pyblish-ftrack\\pyblish_ftrack",

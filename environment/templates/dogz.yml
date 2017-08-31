@@ -26,8 +26,6 @@ paths:
         pattern: '{Project.code}_{Shot.name}_{Task.name}_{version}'
     shot.publish.base:
         pattern: '{Project.code}_{Shot.name}_{family}_{item}_{version}{subset}'
-    shot.publish.basemaster:
-        pattern: '{Project.code}_{Shot.name}_{family}_{item}{subset}'
 
 
     shot.work.scene:
@@ -38,8 +36,6 @@ paths:
 
     shot.publish.item:
         pattern: '{@shot.task.publish}/{family}/{item}/{version}/{@shot.publish.base}.{ext}'
-    shot.publish.master:
-        pattern: '{@shot.task.publish}/{family}/{item}/{@shot.publish.basemaster}.{ext}'
 
     shot.render.folder:
         pattern: '{@shot.render}/{Task.name}/{renderlayer}/{version}'
