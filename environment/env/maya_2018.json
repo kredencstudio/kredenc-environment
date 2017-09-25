@@ -1,0 +1,11 @@
+{
+    "MAYA_PLUG_IN_PATH": [
+        "{STUDIO_REPOS}\\maya\\2018\\plugins"
+    ],
+    "MAYA_MODULE_PATH": [
+        "{STUDIO_REPOS}\\maya\\2018\\modules"
+    ],
+    "MAYA_SHELF_PATH": [
+        "{STUDIO_TOOLS}\\maya\\maya-kredenc\\shelves\\2018"
+    ]
+}
