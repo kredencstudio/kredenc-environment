@@ -28,14 +28,12 @@ dependencies:
   - https://bitbucket.org/ftrack/ftrack-connect-maya.git@23c7ffa6ee97e8032180246a585428d09c474ea3
   - https://bitbucket.org/ftrack/ftrack-connect-rv.git@a1810c5309312c3aa4aa7855beeda44ee798c279
   - https://bitbucket.org/ftrack/QtExt.git@f88d1db8d5b7a0f5162f29a0701166d3be24fd19
-  - https://github.com/kredencz/pyblish-kredenc.git@d57f290ef7babadf057cd26859f4572d04d2ab20
-  - https://github.com/kredencz/ftrack-kredenc-hooks.git@f433627a88222b2404a6f0ed67d0d04b8fd8acb9
+  - https://github.com/kredencstudio/pyblish-kredenc.git@d57f290ef7babadf057cd26859f4572d04d2ab20
+  - https://github.com/kredencstudio/ftrack-kredenc-hooks.git@f433627a88222b2404a6f0ed67d0d04b8fd8acb9
   - https://github.com/bumpybox/ftrack-hooks.git@e2ac2e54c54b0c1f2fd081a2220c5837677dcacd
   - https://github.com/mkolar/lucidity.git@13f8efeaf99157239984bba79d31620c5338bcdb
   - https://github.com/mkolar/maya-capture.git@01ef86333694cd528293c855ac39c18e84bbffcf
   - https://github.com/BigRoy/maya-capture-gui.git@a9224af58026a5da1c7e40c1c6ae80abf6f8c665
-  - https://bitbucket.org/kredenc/maya-kredenc.git@659196f733b59d28648c6fa9b0cfd3f802f9e565
-  - https://bitbucket.org/milankolar/ftrack-events-environment.git@cc1497a8d59fc267a13f0bd53a842fb56e10dabb
   - https://github.com/tokejepsen/ftrack-connect-environment.git@fa51c5d0d4cc386dd124cbb6a814087583d07c3f:
     - python $REPO_PATH/environment.py
   - https://github.com/kredencz/kredenc-environment.git:

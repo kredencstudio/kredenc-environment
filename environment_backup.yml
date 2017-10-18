@@ -34,7 +34,6 @@ dependencies:
   - https://github.com/mkolar/lucidity.git@13f8efeaf99157239984bba79d31620c5338bcdb
   - https://github.com/mkolar/maya-capture.git@01ef86333694cd528293c855ac39c18e84bbffcf
   - https://github.com/BigRoy/maya-capture-gui.git@a9224af58026a5da1c7e40c1c6ae80abf6f8c665
-  - https://bitbucket.org/kredenc/maya-kredenc.git@659196f733b59d28648c6fa9b0cfd3f802f9e565
   - https://bitbucket.org/milankolar/ftrack-events-environment.git@cc1497a8d59fc267a13f0bd53a842fb56e10dabb
   - https://github.com/tokejepsen/ftrack-connect-environment.git:
     - python $REPO_PATH/environment.py

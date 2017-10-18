@@ -9,6 +9,7 @@ environments = [
     'pyblish'
     ]
 
+
 os.environ['PYTHONDONTWRITEBYTECODE'] = '1'
 os.environ['STUDIO_REPOS'] = os.path.join(r'\\kre-c01', 'share', 'core', 'repos')
 os.environ['STUDIO_SOFT'] = os.path.join(r'\\kre-c01', 'share', 'core', 'software')
